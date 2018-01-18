@@ -8,7 +8,24 @@
   <title>VidSnapper</title>
 </head>
 <body>
-  
+  <div class="navbar">
+    <h1>VidSnapper</h1>
+  </div>
+  <div class="top-container">
+    <video id="video">Video stream not available.</video>
+  </div>
+  <button id="photo-button.btn.btn-dard">Take Photo</button>
+  <select id="photo-filter">
+    <option value="none">None</option>
+    <option value="grayscale(100%)">Grayscale</option>
+    <option value="sepia(100%)">Sepia</option>
+    <option value="invert(100%)">Invert</option>
+    <option value="hue-rotate(90deg)">Hue</option>
+    <option value="blur(10px)">Blur</option>
+    <option value="contrast(200%)">Contrast</option>
+  </select>
+  <button id="clear-button">Clear</button>
+  <canvas></canvas>
   <script src="js/main.js"></script>
 </body>
 </html>
